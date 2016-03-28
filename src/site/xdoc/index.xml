@@ -66,7 +66,7 @@ The <a href="source-repository.html">git repository</a> can be
 <section name="Releases">
 <ul>
     <li>
-        <a href="http://commons.apache.org/codec/download_codec.cgi">Chimera 1.0.0 (mirrors)</a> requires Java 1.7
+        <a href="http://commons.apache.org/chimera/download_chimera.cgi">Chimera 1.0.0 (mirrors)</a> requires Java 1.7
     </li>
     <li>
         <a href="https://github.com/intel-hadoop/chimera/releases/tag/0.9.1">Chimera 0.9.1 (archives)</a> requires Java 1.6
@@ -77,7 +77,7 @@ The <a href="source-repository.html">git repository</a> can be
 </ul>
 <p>
 See the
-<a href="http://commons.apache.org/codec/download_codec.cgi">Download Page</a>
+<a href="http://commons.apache.org/chimera/download_chimera.cgi">Download Page</a>
 for the latest releases.<br />
 </p>
 <p>

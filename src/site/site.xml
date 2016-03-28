@@ -15,7 +15,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<project name="Codec">
+<project name="Chimera">
     <bannerRight>
         <name>Apache Commons Chimera</name>
         <src>/images/logo.png</src>
