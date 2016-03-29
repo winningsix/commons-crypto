@@ -23,12 +23,12 @@ limitations under the License.
 <body>
 <!-- ================================================== -->
 <section name="Apache Commons Crypto">
-    <p>
-        Crypto is a cryptographic library optimized with AES-NI (Advanced Encryption Standard New
-        Instructions). It provides Java API for both cipher level and Java stream level. Developers
-        can use it to implement high performance AES encryption/decryption with the minimum code and
-        effort. Please note that Chimera doesn't implement the cryptographic algorithm such as AES
-        directly. It wraps to Openssl or JCE which implement the algorithms.
+    <p>Apache Commons Crypto is a cryptographic library optimized with AES-NI (Advanced Encryption
+        Standard New Instructions). It provides Java API for both cipher level and Java stream
+        level. Developers can use it to implement high performance AES encryption/decryption with
+        the minimum code and effort. Please note that Apache Commons Crypto doesn't implement the
+        cryptographic algorithm such as AES directly. It wraps to Openssl or JCE which implement the
+        algorithms.
     </p>
 </section>
 <!-- ================================================== -->
@@ -45,11 +45,11 @@ limitations under the License.
       <li>JNI-based implementation to achieve comparable performance to the native C++ version 
           based on Openssl.
       </li>
-      <li>Portable across various operating systems (currently only Linux); Chimera loads the
+      <li>Portable across various operating systems (currently only Linux); Apache Commons Crypto loads the
           library according to your machine environment (It looks system properties, os.name and
           os.arch).
       </li>
-      <li>Simple usage. Add the chimera-(version).jar file to your classpath.</li>
+      <li>Simple usage. Add the crypto-(version).jar file to your classpath.</li>
     </ul>
   </p>
 </section>
@@ -79,13 +79,13 @@ limitations under the License.
 <section name="Releases">
 <ul>
     <li>
-        <a href="http://commons.apache.org/chimera/download_crypto.cgi">Crypto 1.0.0 (mirrors)</a> 
+        <a href="http://commons.apache.org/crypto/download_crypto.cgi">Crypto 1.0.0 (mirrors)</a>
         requires Java 1.7
     </li>
 </ul>
 <p>
 See the
-<a href="http://commons.apache.org/chimera/download_crypto.cgi">Download Page</a>
+<a href="http://commons.apache.org/crypto/download_crypto.cgi">Download Page</a>
 for the latest releases.<br />
 </p>
 <p>
