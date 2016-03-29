@@ -45,11 +45,11 @@ limitations under the License.
 -->
 <document>
   <properties>
-    <title>Download Apache Commons Chimera</title>
+    <title>Download Apache Commons Crypto</title>
     <author email="dev@commons.apache.org">Commons Documentation Team</author>
   </properties>
   <body>
-    <section name="Download Apache Commons Chimera">
+    <section name="Download Apache Commons Crypto">
     <subsection name="Using a Mirror">
       <p>
         We recommend you use a mirror to download our release
@@ -95,32 +95,32 @@ limitations under the License.
       </p>
     </subsection>
     </section>
-    <section name="Apache Commons Chimera 1.0.0-SNAPSHOT (Requires Java 1.7 or later)">
+    <section name="Apache Commons Crypto 1.0.0 (Requires Java 1.6 or later)">
       <subsection name="Binaries">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.tar.gz">chimera-1.0.0-SNAPSHOT-bin.tar.gz</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.tar.gz.md5">md5</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/crypto/binaries/commons-crypto-1.0.0-bin.tar.gz">commons-crypto-1.0.0-bin.tar.gz</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/binaries/commons-crypto-1.0.0-bin.tar.gz.md5">md5</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/binaries/commons-crypto-1.0.0-bin.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.zip">chimera-1.0.0-SNAPSHOT-bin.zip</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.zip.md5">md5</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/binaries/chimera-1.0.0-SNAPSHOT-bin.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/crypto/binaries/commons-crypto-1.0.0-bin.zip">commons-crypto-1.0.0-bin.zip</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/binaries/commons-crypto-1.0.0-bin.zip.md5">md5</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/binaries/commons-crypto-1.0.0-bin.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>
       <subsection name="Source">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.tar.gz">chimera-1.0.0-SNAPSHOT-src.tar.gz</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.tar.gz.md5">md5</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/crypto/source/commons-crypto-1.0.0-src.tar.gz">commons-crypto-1.0.0-src.tar.gz</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/source/commons-crypto-1.0.0-src.tar.gz.md5">md5</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/source/commons-crypto-1.0.0-src.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.zip">chimera-1.0.0-SNAPSHOT-src.zip</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.zip.md5">md5</a></td>
-              <td><a href="http://www.apache.org/dist/commons/chimera/source/chimera-1.0.0-SNAPSHOT-src.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/crypto/source/commons-crypto-1.0.0-src.zip">commons-crypto-1.0.0-src.zip</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/source/commons-crypto-1.0.0-src.zip.md5">md5</a></td>
+              <td><a href="http://www.apache.org/dist/commons/crypto/source/commons-crypto-1.0.0-src.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>
@@ -130,8 +130,8 @@ limitations under the License.
           Older releases can be obtained from the archives.
         </p>
         <ul>
-          <li class="download"><a href="[preferred]/commons/chimera/">browse download area</a></li>
-          <li><a href="http://archive.apache.org/dist/commons/chimera/">archives...</a></li>
+          <li class="download"><a href="[preferred]/commons/crypto/">browse download area</a></li>
+          <li><a href="http://archive.apache.org/dist/commons/crypto/">archives...</a></li>
         </ul>
     </section>
   </body>

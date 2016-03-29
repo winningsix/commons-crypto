@@ -17,74 +17,83 @@ limitations under the License.
 -->
 <document>
  <properties>
-  <title>Home</title>
+  <title>Overview</title>
   <author email="dev@commons.apache.org">Commons Documentation Team</author>
  </properties>
 <body>
 <!-- ================================================== -->
-<section name="Apache Commons Chimera">
-<p>
-Chimera is a cryptographic library optimized with AES-NI (Advanced Encryption Standard New Instructions). It provides Java API for both cipher level and Java stream level. Developers can use it to implement high performance AES encryption/decryption with the minimum code and effort. Please note that Chimera doesn't implement the cryptographic algorithm such as AES directly. It wraps to Openssl or JCE which implement the algorithms.
-</p>
+<section name="Apache Commons Crypto">
+    <p>
+        Crypto is a cryptographic library optimized with AES-NI (Advanced Encryption Standard New
+        Instructions). It provides Java API for both cipher level and Java stream level. Developers
+        can use it to implement high performance AES encryption/decryption with the minimum code and
+        effort. Please note that Chimera doesn't implement the cryptographic algorithm such as AES
+        directly. It wraps to Openssl or JCE which implement the algorithms.
+    </p>
 </section>
 <!-- ================================================== -->
 <section name="Features">
-    <p>Cipher API for low level cryptographic operations.</p>
-    <p>Java stream API (CryptoInputStream/CryptoOutputStream) for high level stream
+  <p>
+    <ul>
+      <li>Cipher API for low level cryptographic operations.</li>
+      <li>Java stream API (CryptoInputStream/CryptoOutputStream) for high level stream
         encyrption/decryption.
-    </p>
-    <p>Both optimized with high performance AES encryption/decryption. (1400 MB/s - 1700 MB/s
+      </li>
+      <li>Both optimized with high performance AES encryption/decryption. (1400 MB/s - 1700 MB/s
         throughput in modern Xeon processors).
-    </p>
-    <p>JNI-based implementation to achieve comparable performance to the native C++ version based on
-        Openssl.
-    </p>
-    <p>Portable across various operating systems (currently only Linux); Chimera loads the library
-        according to your machine environment (It looks system properties, os.name and os.arch).
-    </p>
-    <p>Simple usage. Add the chimera-(version).jar file to your classpath.</p>
+      </li>
+      <li>JNI-based implementation to achieve comparable performance to the native C++ version 
+          based on Openssl.
+      </li>
+      <li>Portable across various operating systems (currently only Linux); Chimera loads the
+          library according to your machine environment (It looks system properties, os.name and
+          os.arch).
+      </li>
+      <li>Simple usage. Add the chimera-(version).jar file to your classpath.</li>
+    </ul>
+  </p>
 </section>
 <!-- ================================================== -->
 <section name="Documentation">
-<p>
-An overview of the functionality is provided in the
-<a href="userguide.html">user guide</a>.
-Various <a href="project-reports.html">project reports</a> are also available.
-</p>
-<p>
-The Javadoc API documents are available online:
-</p>
-<ul>
-  <li><a href="apidocs/index.html">Javadoc trunk</a></li>            
-</ul>
-<p>
-The <a href="source-repository.html">git repository</a> can be
-<a href="git@github.com:intel-hadoop/chimera.git">browsed</a>.
-</p>
+    <p>
+        An overview of the functionality is provided in the
+        <a href="userguide.html">user guide</a>.
+        Various
+        <a href="project-reports.html">project reports</a>
+        are also available.
+    </p>
+    <p>
+        The Javadoc API documents are available online:
+    </p>
+    <ul>
+        <li>
+            <a href="apidocs/index.html">Javadoc trunk</a>
+        </li>
+    </ul>
+    <p>
+        The <a href="source-repository.html">subversion repository</a> can be
+        <a href="http://svn.apache.org/viewvc/commons/proper/crypto/trunk/">browsed</a>.
+    </p>
 </section>
 <!-- ================================================== -->
 <section name="Releases">
 <ul>
     <li>
-        <a href="http://commons.apache.org/chimera/download_chimera.cgi">Chimera 1.0.0 (mirrors)</a> requires Java 1.7
-    </li>
-    <li>
-        <a href="https://github.com/intel-hadoop/chimera/releases/tag/0.9.1">Chimera 0.9.1 (archives)</a> requires Java 1.6
-    </li>
-    <li>
-        <a href="https://github.com/intel-hadoop/chimera/releases/tag/0.9.0">Chimera 0.9.0 (archives)</a> requires Java 1.6
+        <a href="http://commons.apache.org/chimera/download_crypto.cgi">Crypto 1.0.0 (mirrors)</a> 
+        requires Java 1.7
     </li>
 </ul>
 <p>
 See the
-<a href="http://commons.apache.org/chimera/download_chimera.cgi">Download Page</a>
+<a href="http://commons.apache.org/chimera/download_crypto.cgi">Download Page</a>
 for the latest releases.<br />
 </p>
 <p>
 <a href="changes-report.html">Change reports</a> are also available.
 </p>
 <p>
-For previous releases, see the <a href="https://github.com/intel-hadoop/chimera/releases">Apache Archive</a>
+For previous releases, see the <a href="http://archive.apache.org/dist/commons/crypto/">Apache
+    Archive</a>
 </p>
 </section>
 <!-- ================================================== -->
@@ -94,7 +103,7 @@ The <a href="mail-lists.html">commons mailing lists</a> act as the main support 
 The user list is suitable for most library usage queries.
 The dev list is intended for the development discussion.
 Please remember that the lists are shared between all commons components,
-so prefix your email by [Chimera].
+so prefix your email by [crypto].
 </p>
 <p>
 Issues may be reported via <a href="issue-tracking.html">ASF JIRA</a>.

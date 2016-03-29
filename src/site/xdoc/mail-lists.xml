@@ -41,28 +41,28 @@ limitations under the License.
 -->
 <document>
   <properties>
-    <title>Apache Commons Chimera Mailing Lists</title>
+    <title>Apache Commons Crypto Mailing Lists</title>
     <author email="dev@commons.apache.org">Commons Documentation Team</author>
   </properties>
   <body>
 
     <section name="Overview">
       <p>
-        <a href="index.html">Apache Commons Chimera</a> shares mailing lists with all the other
+        <a href="index.html">Apache Commons Crypto</a> shares mailing lists with all the other
         <a href="http://commons.apache.org/components.html">Commons Components</a>.
         To make it easier for people to only read messages related to components they are interested in,
         the convention in Commons is to prefix the subject line of messages with the component's name,
         for example:
         <ul>
-          <li>[chimera] Problem with the ...</li>
+          <li>[crypto] Problem with the ...</li>
         </ul>
       </p>
       <p>
-        Questions related to the usage of Apache Commons Chimera should be posted to the
+        Questions related to the usage of Apache Commons Crypto should be posted to the
         <a href="http://mail-archives.apache.org/mod_mbox/commons-user/">User List</a>.
         <br />
         The <a href="http://mail-archives.apache.org/mod_mbox/commons-dev/">Developer List</a>
-        is for questions and discussion related to the development of Apache Commons Chimera.
+        is for questions and discussion related to the development of Apache Commons Crypto.
         <br />
         Please do not cross-post; developers are also subscribed to the user list.
         <br />
@@ -76,10 +76,10 @@ limitations under the License.
       </p>
     </section>
 
-    <section name="Apache Commons Chimera Mailing Lists">
+    <section name="Apache Commons Crypto Mailing Lists">
       <p>
-        <strong>Please prefix the subject line of any messages for <a href="index.html">Apache Commons Chimera</a>
-        with <i>[chimera]</i></strong> - <i>thanks!</i>
+        <strong>Please prefix the subject line of any messages for <a href="index.html">Apache Commons Crypto</a>
+        with <i>[crypto]</i></strong> - <i>thanks!</i>
         <br />
         <br />
       </p>
@@ -99,12 +99,12 @@ limitations under the License.
           <td>
             <strong>Commons User List</strong>
             <br /><br />
-            Questions on using Apache Commons Chimera.
+            Questions on using Apache Commons Crypto.
             <br /><br />
           </td>
           <td><a href="mailto:user-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:user-unsubscribe@commons.apache.org">Unsubscribe</a></td>
-          <td><a href="mailto:user@commons.apache.org?subject=[chimera]">Post</a></td>
+          <td><a href="mailto:user@commons.apache.org?subject=[crypto]">Post</a></td>
           <td><a href="http://mail-archives.apache.org/mod_mbox/commons-user/">mail-archives.apache.org</a></td>
           <td><a href="http://markmail.org/list/org.apache.commons.users/">markmail.org</a><br />
               <a href="http://www.mail-archive.com/user@commons.apache.org/">www.mail-archive.com</a><br />
@@ -117,12 +117,12 @@ limitations under the License.
           <td>
             <strong>Commons Developer List</strong>
             <br /><br />
-            Discussion of development of Apache Commons Chimera.
+            Discussion of development of Apache Commons Crypto.
             <br /><br />
           </td>
           <td><a href="mailto:dev-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:dev-unsubscribe@commons.apache.org">Unsubscribe</a></td>
-          <td><a href="mailto:dev@commons.apache.org?subject=[chimera]">Post</a></td>
+          <td><a href="mailto:dev@commons.apache.org?subject=[crypto]">Post</a></td>
           <td><a href="http://mail-archives.apache.org/mod_mbox/commons-dev/">mail-archives.apache.org</a></td>
           <td><a href="http://markmail.org/list/org.apache.commons.dev/">markmail.org</a><br />
               <a href="http://www.mail-archive.com/dev@commons.apache.org/">www.mail-archive.com</a><br />
