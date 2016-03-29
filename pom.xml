@@ -48,7 +48,7 @@
       scm:svn:https://svn.apache.org/repos/asf/commons/proper/crypto/trunk
     </developerConnection>
     <url>
-      http://svn.apache.org/viewvc/commons/proper/codec/trunk
+      http://svn.apache.org/viewvc/commons/proper/crypto/trunk
     </url>
   </scm>
 
