@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.intel.chimera.input;
+package com.intel.chimera.stream.input;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -74,7 +74,7 @@ public class StreamInput implements Input {
   }
 
   @Override
-  public void seek(long pos) throws IOException {
+  public void seek(long position) throws IOException {
     throw new UnsupportedOperationException(
         "Seek is not supported by this implementation");
   }

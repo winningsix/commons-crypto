@@ -15,35 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.intel.chimera.output;
-
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.channels.WritableByteChannel;
-
 /**
- * The ChannelOutput class takes a <code>WritableByteChannel</code> object and wraps it as 
- * <code>Output</code> object acceptable by <code>CryptoOutputStream</code> as the output target.
+ * Random classes
  */
-public class ChannelOutput implements Output {
-
-  private WritableByteChannel channel;
-
-  public ChannelOutput(WritableByteChannel channel) {
-    this.channel = channel;
-  }
-
-  @Override
-  public int write(ByteBuffer src) throws IOException {
-    return channel.write(src);
-  }
-
-  @Override
-  public void flush() throws IOException {
-  }
-
-  @Override
-  public void close() throws IOException {
-    channel.close();
-  }
-}
+package com.intel.chimera.random;

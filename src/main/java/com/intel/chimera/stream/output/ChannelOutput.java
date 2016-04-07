@@ -15,57 +15,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.intel.chimera.output;
+package com.intel.chimera.stream.output;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.nio.ByteBuffer;
+import java.nio.channels.WritableByteChannel;
 
 /**
- * The StreamOutput class takes a <code>OutputStream</code> object and wraps it as 
+ * The ChannelOutput class takes a <code>WritableByteChannel</code> object and wraps it as 
  * <code>Output</code> object acceptable by <code>CryptoOutputStream</code> as the output target.
  */
-public class StreamOutput implements Output {
-  private byte[] buf;
-  private int bufferSize;
-  protected OutputStream out;
-  
-  public StreamOutput(OutputStream out, int bufferSize) {
-    this.out = out;
-    this.bufferSize = bufferSize;
+public class ChannelOutput implements Output {
+
+  private WritableByteChannel channel;
+
+  public ChannelOutput(WritableByteChannel channel) {
+    this.channel = channel;
   }
-  
+
   @Override
   public int write(ByteBuffer src) throws IOException {
-    final int len = src.remaining();
-    final byte[] buf = getBuf();
-    
-    int remaining = len;
-    while(remaining > 0) {
-      final int n = Math.min(remaining, bufferSize);
-      src.get(buf, 0, n);
-      out.write(buf, 0, n);
-      remaining = src.remaining();
-    }
-    
-    return len;
+    return channel.write(src);
   }
-  
+
   @Override
   public void flush() throws IOException {
-    out.flush();
   }
 
   @Override
   public void close() throws IOException {
-    out.close();
+    channel.close();
   }
-  
-  private byte[] getBuf() {
-    if (buf == null) {
-      buf = new byte[bufferSize];
-    }
-    return buf;
-  }
-
 }

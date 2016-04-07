@@ -15,12 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.intel.chimera.stream;
+package com.intel.chimera.stream.input;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.ByteBuffer;
-import java.nio.channels.ReadableByteChannel;
 import java.security.GeneralSecurityException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -34,9 +32,7 @@ import javax.crypto.ShortBufferException;
 
 import com.intel.chimera.cipher.Cipher;
 import com.intel.chimera.cipher.CipherFactory;
-import com.intel.chimera.input.ChannelInput;
-import com.intel.chimera.input.Input;
-import com.intel.chimera.input.StreamInput;
+import com.intel.chimera.stream.input.Input;
 import com.intel.chimera.utils.IOUtils;
 import com.intel.chimera.utils.Utils;
 
@@ -61,26 +57,10 @@ public class PositionedCryptoInputStream extends CTRCryptoInputStream {
   private final Queue<CipherState> cipherPool = new
       ConcurrentLinkedQueue<CipherState>();
 
-  public PositionedCryptoInputStream(Properties props, InputStream in,
+  public PositionedCryptoInputStream(Properties props, Input in,
       byte[] key, byte[] iv, long streamOffset) throws IOException {
     this(in, Utils.getCipherInstance(AES_CTR_NOPADDING, props),
         Utils.getBufferSize(props), key, iv, streamOffset);
-  }
-
-  public PositionedCryptoInputStream(Properties props, ReadableByteChannel in,
-      byte[] key, byte[] iv, long streamOffset) throws IOException {
-    this(in, Utils.getCipherInstance(AES_CTR_NOPADDING, props),
-        Utils.getBufferSize(props), key, iv, streamOffset);
-  }
-
-  public PositionedCryptoInputStream(InputStream in, Cipher cipher,
-      int bufferSize, byte[] key, byte[] iv, long streamOffset) throws IOException {
-    this(new StreamInput(in, bufferSize), cipher, bufferSize, key, iv, streamOffset);
-  }
-
-  public PositionedCryptoInputStream(ReadableByteChannel in, Cipher cipher,
-      int bufferSize, byte[] key, byte[] iv, long streamOffset) throws IOException {
-    this(new ChannelInput(in), cipher, bufferSize, key, iv, streamOffset);
   }
 
   public PositionedCryptoInputStream(
@@ -91,11 +71,6 @@ public class PositionedCryptoInputStream extends CTRCryptoInputStream {
       byte[] iv,
       long streamOffset) throws IOException {
     super(input, cipher, bufferSize, key, iv, streamOffset);
-  }
-
-  protected long getPos() throws IOException {
-    checkStream();
-    return streamOffset - outBuffer.remaining();
   }
 
   /**
@@ -130,24 +105,6 @@ public class PositionedCryptoInputStream extends CTRCryptoInputStream {
 
   public void readFully(long position, byte[] buffer) throws IOException {
     readFully(position, buffer, 0, buffer.length);
-  }
-
-  public void seek(long position) throws IOException {
-    Utils.checkArgument(position >= 0, "Cannot seek to negative offset.");
-    checkStream();
-    /*
-     * If data of target pos in the underlying stream has already been read
-     * and decrypted in outBuffer, we just need to re-position outBuffer.
-     */
-    if (position <= getStreamOffset() && position >= getPos()) {
-      int forward = (int) (position - getPos());
-      if (forward > 0) {
-        outBuffer.position(outBuffer.position() + forward);
-      }
-    } else {
-      input.seek(position);
-      resetStreamOffset(position);
-    }
   }
 
   /**
